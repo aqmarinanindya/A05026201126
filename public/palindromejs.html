@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@600&display=swap" rel="stylesheet">
+<style>
+    
+    
+body {
+    background: rgb(199,206,199);
+background: linear-gradient(90deg, rgba(199,206,199,0.9538143382352942) 0%, rgba(142,142,175,1) 42%, rgba(169,208,216,1) 99%);
+    text-align: center;
+    margin : 0 auto 0 auto;
+    width : 100%;
+    margin : 20px 0px 20px 0px;
+    font-family : 'Hind Madurai', sans-serif; 
+    font-weight : 700px;
+    
+
+} 
+.container{
+    justify-content: center;
+    width : 400px;
+    padding : 10px;
+    align-items : center;
+    position : fixed;
+    background-color : white;
+    border-radius : 9px;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%, -50%);
+    box-shadow :8px 10px 8px black;
+}
+</style>
+
+    
+</head>
+<body>
+    <div class="container">
+    <h1>Palindrome Number Checker</h1>
+    
+    <form id="form">
+        <input type="text" name=""  id="number" placeholder="Enter a number">
+        <input type="submit" value ="check">
+    </form>
+    <p id="result"></p>
+</div>
+</body>
+<script type="text/javascript">
+    var frm = document.getElementById("form");
+    frm.onsubmit = function(){
+        var user = document.getElementById("number").value;
+        var view = document.getElementById("result");
+        var numb = user;
+        var reverse =0;
+        while (numb != 0){
+            reverse = (reverse*10)+(numb%10);
+            numb = parseInt(numb/10);
+            
+        }
+        if(user == reverse) {
+            
+            document.getElementById("result").innerHTML= "This is a palindrome number";
+            return false;
+            
+                }
+                else {
+            document.getElementById("result").innerHTML= "This is not a palindrome number";
+            return false;
+                }
+    }
+    </script>
+</html>
+<?php   
+    if($_POST)  
+    {   
+        $num = $_POST['num'];  
+        $reverse = strrev($num);  
+        if($num == $reverse){  
+            echo "The number $num is Palindrome";     
+        }else{  
+            echo "The number $num is not a Palindrome";   
+      }  
+}     
+      ?>  

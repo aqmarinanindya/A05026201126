@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Nindy's Socials </title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background: rgb(169, 189, 169);
+            background: linear-gradient(90deg, rgba(169, 189, 169, 0.9538143382352942) 0%, rgba(173, 205, 175, 1) 42%, rgba(92, 94, 59, 0) 98%);
+        }
+
+        button {
+            height: 40px;
+            width: 150px;
+            margin-top: 20px;
+            align-items: center;
+            background-color: white;
+        }
+
+        .text-center {
+            text-align: center;
+            margin-top: 100px;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#btn4-attr").click(function () {
+                var pattr = $("#myig").attr("href");
+                alert(pattr);
+            });
+            $("#btn5-attr").click(function () {
+                var pattr = $("#myyt").attr("href");
+                alert(pattr);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="text-center">
+
+        <h1>My Socials!</h1>
+        <a href="https://instagram.com/aqmarinanindya" id="myig"></a>
+        <a href="http://www.youtube.com/channel/UCJzN1etBPkmFil6rq0qvurw" target="_blank" id="myyt"></a>
+        <button type="button" id="btn4-attr">Instagram</button><br>
+        <button type="button" id="btn5-attr">Youtube</button>
+
+    </div>
+</body>
+
+</html>
