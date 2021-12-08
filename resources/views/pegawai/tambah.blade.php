@@ -1,3 +1,9 @@
+@extends('layout.bahagia')
+
+@section('title', 'Menambah Data Pegawai')
+@section('judulhalaman', 'Tambah Pegawai')
+
+@section('konten')
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,6 +27,6 @@
 		Alamat <textarea name="alamat" required="required"></textarea> <br/>
 		<input type="submit" value="Simpan Data">
 	</form>
-
+@endsection
 </body>
 </html>
