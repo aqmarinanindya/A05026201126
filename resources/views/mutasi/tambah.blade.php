@@ -1,3 +1,9 @@
+@extends('layout.bahagia')
+
+@section('title', 'Menambah Data Mutasi')
+@section('judulhalaman', 'Tambah Mutasi Pegawai')
+
+@section('konten')
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,8 +11,6 @@
 </head>
 <body>
 	<h3>Tambah Data Mutasi</h3>
-
-	<a href="/mutasi"> Kembali</a>
 
 	<br/>
 	<br/>
@@ -20,6 +24,7 @@
         MulaiBertugas <input type="datetime-local" name="MulaiBertugas" required="required"> <br/>
 		<input type="submit" value="Simpan Data">
 	</form>
-
+    <p> <a href="/mutasi"> Kembali</a></p>
+@endsection
 </body>
 </html>
