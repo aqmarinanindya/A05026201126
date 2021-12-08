@@ -1,3 +1,9 @@
+@extends('layout.bahagia')
+
+@section('title', 'Mengedit Tabel Mutasi')
+@section('judulhalaman', 'Edit Mutasi Pegawai')
+
+@section('konten')
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,7 +29,7 @@
 		<input type="submit" value="Simpan Data">
 	</form>
 	@endforeach
-
+@endsection
 
 </body>
 </html>
