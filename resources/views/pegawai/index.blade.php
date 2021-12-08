@@ -1,3 +1,9 @@
+@extends('layout.bahagia')
+
+@section('title', 'Tabel Pegawai')
+@section('judulhalaman', 'Data Pegawai')
+
+@section('konten')
 <!DOCTYPE html>
 
 <html>
@@ -7,6 +13,12 @@
 	<title>Tutorial Membuat CRUD Pada Laravel - www.malasngoding.com</title>
 
 </head>
+<style>
+    table {
+        padding : 6px;
+        align-content : center;
+    }
+</style>
 
 <body>
 
@@ -26,9 +38,9 @@
 
 	<br/>
 
- 
-
-	<table border="1">
+     <div class="container">
+        <table class="table table-bordered">
+            <thead>
 
 		<tr>
 
@@ -69,12 +81,12 @@
 		</tr>
 
 		@endforeach
-
-	</table>
-
+    </tbody>
+</table>
+</div>
  
 
- 
+ @endsection
 
 </body>
 
