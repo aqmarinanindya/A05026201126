@@ -1,3 +1,9 @@
+@extends('layout.bahagia')
+
+@section('title', 'Mengedit Tabel Pegawai')
+@section('judulhalaman', 'Edit Data Pegawai')
+
+@section('konten')
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,6 +31,6 @@
 	</form>
 	@endforeach
 
-
+@endsection
 </body>
 </html>
