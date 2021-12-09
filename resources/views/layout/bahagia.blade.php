@@ -24,13 +24,14 @@
         margin-left: 200px;
         margin-right : 20px;
         margin-bottom : 60px;
+        padding : 20px;
 
     }
     img {
         border-radius : 60px;
     }
     .w3-container-2 {
-        margin-left : 30px;
+        margin-left : 20px;
         margin-bottom : 60px;
     }
     footer {
@@ -38,12 +39,17 @@
         background-color : black;
         color : white;
         font-weight : bold;
-        padding : 10px;
+        padding : 40px;
+    }
+    h3{
+        margin-left : 20px;
     }
 </style>
 <body>
     <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px;" id="mySidebar">
+        <h3>Menu</h3>
         <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+
         <a href="/pegawai" class="w3-bar-item w3-button">Data pegawai</a>
         <a href="/absen" class="w3-bar-item w3-button">Data Absensi</a>
         <a href="/mutasi" class="w3-bar-item w3-button">Data Mutasi</a>
@@ -63,7 +69,7 @@
         </div>
 
 
-      <div class="w3-container-2">
+      <div class="w3-container-2" >
 
         @section('konten')
         @show
