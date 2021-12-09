@@ -46,7 +46,7 @@ class AbsenController extends Controller
         // mengambil data dari table pegawai
         $pegawai = DB::table('pegawai')->orderBy('pegawai_nama', 'asc')->get(); //defaultnya urut Primary Key
 
-        $judul = "Hallo Apa kabar" ;
+      
 
         // passing data absen yang didapat ke view update.blade.php
         return view('absen.edit', ['absen' => $absen,'pegawai' => $pegawai , 'judul' => $judul]);
