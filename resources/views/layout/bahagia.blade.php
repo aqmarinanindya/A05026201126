@@ -53,7 +53,7 @@
 
       <div class="w3-main" style="margin-left:200px">
       <div class="w3-teal">
-        <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+        <button class="w3-button w3-teal w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
 
     <div class="w3-container-1">
           <img src="https://media-exp1.licdn.com/dms/image/C4E03AQFcfkKsxmHAiw/profile-displayphoto-shrink_200_200/0/1638981859957?e=1644451200&v=beta&t=Zql8oKvWVbqNUukZiRNfm9AefeBRSzyomeKXyvDKYLk" width=100px>
