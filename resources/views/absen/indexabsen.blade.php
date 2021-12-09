@@ -14,6 +14,9 @@
         padding : 6px;
         align-content : center;
     }
+    .container{
+        margin-right : 100px;
+    }
 </style>
 
 <body>
