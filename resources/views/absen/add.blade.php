@@ -21,8 +21,8 @@
 
 </head>
 <body>
-    <h3>Tambah Absensi Pegawai</h3>
     <div class="container">
+    <h3>Tambah Absensi Pegawai</h3><br>
     <form action="/absen/store" method="post">
         {{ csrf_field() }}
         {{-- <input type="hidden" name="id" value="{{ $a->ID }}"> --}}
