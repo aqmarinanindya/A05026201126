@@ -33,6 +33,8 @@
     .w3-container-2 {
         margin-left : 20px;
         margin-bottom : 60px;
+        margin-right : 100px;
+        width : 200px;
     }
     footer {
         text-align : center;
@@ -53,8 +55,7 @@
         <a href="/pegawai" class="w3-bar-item w3-button">Data pegawai</a>
         <a href="/absen" class="w3-bar-item w3-button">Data Absensi</a>
         <a href="/mutasi" class="w3-bar-item w3-button">Data Mutasi</a>
-        <a href="#" class="w3-bar-item w3-button">Minggu Depan</a>
-        <a href="#" class="w3-bar-item w3-button">Praktikum</a>
+        <a href="/lipstick" class="w3-bar-item w3-button">Data Lipstick</a>
       </div>
 
       <div class="w3-main" style="margin-left:200px">
