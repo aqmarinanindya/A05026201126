@@ -11,7 +11,11 @@ class MutasiController extends Controller
     public function index()
     {
         // DB::table('')->get();
-        $mutasi = DB::table('mutasi')->paginate(5);
+        // $mutasi = DB::table('mutasi')->paginate(5);
+        $mutasi = DB::table('mutasi')
+        ->join('pegawai','mutasi.IDPegawai','=','pegawai.pegawai_id')
+        ->select('mutasi.*','pegawai.pegawai_nama')
+        ->paginate(5);
         return view('mutasi.index',['mutasi' => $mutasi]);
     }
     public function tambah()
@@ -31,8 +35,18 @@ class MutasiController extends Controller
 }
     public function edit($id)
     {
-        $mutasi = DB::table('mutasi')->where('ID',$id)->get();
-        return view('mutasi.edit',['mutasi' => $mutasi]);
+         // mengambil data absen berdasarkan id yang dipilih
+         $mutasi = DB::table('mutasi')->where('ID', $id)->get();
+
+         // mengambil data dari table pegawai
+         $pegawai = DB::table('pegawai')->orderBy('pegawai_nama', 'asc')->get(); //defaultnya urut Primary Key
+
+
+
+         // passing data absen yang didapat ke view update.blade.php
+         return view('mutasi.edit', ['mutasi' => $mutasi,'pegawai' => $pegawai ]);
+        // $mutasi = DB::table('mutasi')->where('ID',$id)->get();
+        // return view('mutasi.edit',['mutasi' => $mutasi]);
 
     }
     public function update(Request $request)
