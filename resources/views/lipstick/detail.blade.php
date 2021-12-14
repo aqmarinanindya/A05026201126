@@ -21,19 +21,19 @@
 
         <h3>Detail Data Lipstick</h3><br>
         <div class="form-group row">
-            <label class="col-sm-2" for="kodelipstick"> kodelipstick </label>
+            <label class="col-sm-2" for="kodelipstick"> Kode Lipstick </label>
             <div class="col-sm-10" > : {{ $a->kodelipstick}}</div>
         </div>
         <div class="form-group row">
-            <label class="col-sm-2" for="merklipstick"> merklipstick </label>
+            <label class="col-sm-2" for="merklipstick"> Merk Lipstick </label>
             <div class="col-sm-10" > : {{ $a->merklipstick}}</div>
         </div>
         <div class="form-group row">
-            <label class="col-sm-2" for="stocklipstick"> stocklipstick </label>
+            <label class="col-sm-2" for="stocklipstick"> Stock Lipstick </label>
             <div class="col-sm-10" > : {{ $a->stocklipstick}}</div>
         </div>
         <div class="form-group row">
-            <label class="col-sm-2" for="tersedia"> tersedia </label>
+            <label class="col-sm-2" for="tersedia"> Tersedia </label>
             <div class="col-sm-10" > : {{ $a->tersedia}}</div>
         </div>
 </div>

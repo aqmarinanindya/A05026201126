@@ -24,25 +24,25 @@
 	<form action="/lipstick/update" method="post">
 		{{ csrf_field() }}
         <div class="form-group">
-            <label class="control-label col-sm-2" for="kodelipstick">kodelipstick :</label>
+            <label class="control-label col-sm-2" for="kodelipstick">Kode Lipstick</label>
             <div class="col-sm-10">
                 <input type="number" name="kodelipstick" value="{{ $a->kodelipstick}}" class="form-control" required="required"> <br/>
             </div>
         </div>
         <div class="form-group"><br/>
-            <label class="control-label col-sm-2" for="merklipstick">merklipstick :</label>
+            <label class="control-label col-sm-2" for="merklipstick">Merk Lipstick</label>
             <div class="col-sm-10">
                 <input type="text" name="merklipstick" value="{{ $a->merklipstick }}" class="form-control" required="required"> <br/>
             </div>
         </div>
         <div class="form-group"><br/>
-            <label class="control-label col-sm-2" for="stocklipstick">stocklipstick :</label>
+            <label class="control-label col-sm-2" for="stocklipstick">Stock Lipstick</label>
             <div class="col-sm-10">
                 <input type="number" class="form-control" name="stocklipstick" value="{{ $a->stocklipstick}}" required="required"> <br/>
             </div>
         </div>
         <div class="form-group"><br/>
-            <label class="control-label col-sm-2" for="tersedia">tersedia :</label>
+            <label class="control-label col-sm-2" for="tersedia">Tersedia</label>
             <div class="col-sm-10">
                 <label class="radio-inline" for="html"><input type="radio"  id="html" name="tersedia" value="Y"  @if ($a->tersedia === "Y" ) checked="checked" @endif>Ya</label>
                 <label class="radio-inline" for="css"><input type="radio"  id="css" name="tersedia" value="T"  @if ($a->tersedia === "T" ) checked="checked" @endif >Tidak</label>
