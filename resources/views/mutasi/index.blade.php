@@ -34,7 +34,7 @@
             <thead>
 		<tr>
 			<th class="isi-tabel">ID</th>
-			<th class="isi-tabel">IDPegawai</th>
+			<th class="isi-tabel">Nama Pegawai</th>
 			<th class="isi-tabel">Departemen</th>
 		    <th class="isi-tabel">SubDepartemen</th>
 			<th class="isi-tabel">MulaiBertugas</th>
@@ -43,7 +43,7 @@
 		@foreach($mutasi as $m)
 		<tr>
 			<td class="isi-tabel">{{ $m->ID }}</td>
-			<td class="isi-tabel">{{ $m->IDPegawai }}</td>
+			<td class="isi-tabel">{{ $m->pegawai_nama }}</td>
 			<td class="isi-tabel">{{ $m->Departemen }}</td>
 			<td class="isi-tabel">{{ $m->SubDepartemen }}</td>
             <td class="isi-tabel">{{ $m->MulaiBertugas }}</td>
