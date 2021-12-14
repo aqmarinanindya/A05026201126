@@ -33,7 +33,7 @@
         <thead>
 		<tr>
 
-			<th class="isi-tabel">IDPegawai</th>
+			<th class="isi-tabel">Nama Pegawai</th>
 			<th class="isi-tabel">Tanggal</th>
 			<th class="isi-tabel">Status</th>
 			<th class="isi-tabel">Opsi</th>
@@ -41,7 +41,7 @@
 		@foreach($absen as $a)
 		<tr>
 
-			<td class="isi-tabel">{{ $a->IDPegawai }}</td>
+			<td class="isi-tabel">{{ $a->pegawai_nama }}</td>
 			<td class="isi-tabel">{{ $a->Tanggal }}</td>
 			<td class="isi-tabel">{{ $a->Status }}</td>
 			<td>
