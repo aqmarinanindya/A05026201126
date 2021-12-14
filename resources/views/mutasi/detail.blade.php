@@ -27,6 +27,10 @@
             <label class="col-sm-2" for="IDPegawai"> IDPegawai </label>
             <div class="col-sm-10" > : {{ $m->IDPegawai}}</div>
         </div>
+        {{-- <div class="form-group row">
+            <label class="col-sm-2" for="pegawai_nama"> Nama Pegawai </label>
+            <div class="col-sm-10" > : {{ $m->pegawai_nama}}</div>
+        </div> --}}
         <div class="form-group row">
             <label class="col-sm-2" for="Departemen"> Departemen </label>
             <div class="col-sm-10" > : {{ $m->Departemen}}</div>
