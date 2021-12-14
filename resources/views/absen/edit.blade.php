@@ -5,8 +5,19 @@
    @section('judulhalaman', 'Edit Absensi Pegawai')
 
    @section('konten')
+   <!DOCTYPE html>
+<html>
+<head>
+	<title>Edit</title>
+</head>
+<style>
+    .form-group{
+        margin-right : 100px;
+    }
+</style>
+<body>
 
-<h3>{{ $judul }}</h3>
+<h3>Edit Absensi</h3>
 	@foreach($absen as $a)
 	<form action="/absen/update" method="post">
 		{{ csrf_field() }}
@@ -18,8 +29,8 @@
         </select>
         <br>
                 <div class="form-group">
-                    <label for="dtpickerdemo" class="col-sm-2 control-label">Tanggal :</label>
-                    <div class='col-sm-4 input-group date ' id='dtpickerdemo'>
+                    <label for="dtpickerdemo" class="control-label col-sm-2">Tanggal :</label>
+                    <div class='col-sm-10 input-group date ' id='dtpickerdemo'>
                         <input type='text' class="form-control" name="tanggal" value="{{ $a->Tanggal }}" required="required" />
                         <span class="input-group-addon">
                             <span class="glyphicon glyphicon-calendar"></span>
@@ -50,3 +61,4 @@
 
    <p> <a href="/absen"> Kembali</a></p>
    @endsection
+</body></html>
