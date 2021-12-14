@@ -29,10 +29,10 @@
             <thead>
             <tr>
 
-                <th class="isi-tabel">kodelipstick</th>
-                <th class="isi-tabel">merklipstick</th>
-                <th class="isi-tabel">stocklipstick</th>
-                <th class="isi-tabel">tersedia</th>
+                <th class="isi-tabel">Kode Lipstick</th>
+                <th class="isi-tabel">Merk Lipstick</th>
+                <th class="isi-tabel">Stock Lipstick</th>
+                <th class="isi-tabel">Tersedia</th>
                 <th class="isi-tabel">Opsi</th>
             </tr>
             @foreach($lipstick as $a)
@@ -54,17 +54,17 @@
         </tbody>
         </table>
         <br>
-Halaman : {{ $lipstick->currentPage() }} <br/>
+    Halaman : {{ $lipstick->currentPage() }} <br/>
 	Jumlah Data : {{ $lipstick->total() }} <br/>
 	Data Per Halaman : {{ $lipstick->perPage() }} <br/>
         {{ $lipstick->links() }}
-    </div>
+
     <p>
         Keterangan Tersedia: <br>
         Y : Ya <br>
         T : Tidak <br>
         </p>
-
+    </div>
 @endsection
 
 </body>
