@@ -25,16 +25,20 @@
 	@foreach($mutasi as $m)
 	<form action="/mutasi/update" method="post">
 		{{ csrf_field() }}
-        <div class="form-group">
+        <div class="form-group ">
             <label class="control-label col-sm-2" for="ID">ID:</label>
             <div class="col-sm-10">
                 <input type="number" name="ID" value="{{ $m->ID}}" class="form-control" required="required"> <br/>
             </div>
         </div>
-        <div class="form-group"><br/>
+        <div class="form-group row"><br/>
             <label class="control-label col-sm-2" for="IDPegawai">IDPegawai :</label>
             <div class="col-sm-10">
-                <input type="number" name="IDPegawai" value="{{ $m->IDPegawai }}" class="form-control" required="required"> <br/>
+                <select name="IDPegawai" >
+                    @foreach($pegawai as $p)
+                     <option value="{{ $p->pegawai_id }}" @if ($p->pegawai_id === $m->IDPegawai ) selected="selected" @endif>{{ $p->pegawai_nama }}</option>
+                    @endforeach
+                </select>
             </div>
         </div>
         <div class="form-group"><br/>
