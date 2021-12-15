@@ -69,3 +69,9 @@ Route::post('/lipstick/update','LipstickController@update');
 Route::get('/lipstick/hapus/{id}','LipstickController@hapus');
 Route::get('/lipstick/cari','LipstickController@cari');
 Route::get('/lipstick/view/{id}','LipstickController@detail');
+
+
+Route::get('/karyawan1','Karyawan1Controller@index');
+Route::get('/karyawan1/edit/{id}','Karyawan1Controller@edit');
+Route::post('/karyawan1/update','Karyawan1Controller@update');
+Route::get('/karyawan1/view/{id}','Karyawan1Controller@detail');

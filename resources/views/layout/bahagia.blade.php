@@ -56,7 +56,8 @@
         <a href="/absen" class="w3-bar-item w3-button">Data Absensi</a>
         <a href="/mutasi" class="w3-bar-item w3-button">Data Mutasi</a>
         <a href="/lipstick" class="w3-bar-item w3-button">Data Lipstick</a>
-      </div>
+        <a href="/karyawan1" class="w3-bar-item w3-button">EAS Kode Soal C3</a>
+    </div>
 
       <div class="w3-main" style="margin-left:200px">
       <div class="w3-teal">
